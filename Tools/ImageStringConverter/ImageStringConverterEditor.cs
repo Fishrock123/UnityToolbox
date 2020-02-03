@@ -1,11 +1,11 @@
 #if UNITY_EDITOR
 using System;
 using System.IO;
-using MyBox.EditorTools;
+using UnityToolbox.EditorTools;
 using UnityEditor;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	/// <summary>
 	/// This tool allows to save image as a string and load image back from that string.
@@ -14,7 +14,7 @@ namespace MyBox.Internal
 	/// </summary>
 	public class ImageStringConverterEditor : EditorWindow
 	{
-		[MenuItem("Tools/MyBox/String Image Converter", false, 50)]
+		[MenuItem("Tools/UnityToolbox/String Image Converter", false, 50)]
 		private static void CreateWindow()
 		{
 			GetWindow<ImageStringConverterEditor>(false, "String Image Converter").Show();

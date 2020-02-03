@@ -7,7 +7,7 @@
 using System;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[Serializable]
 	public struct MinMaxFloat
@@ -107,7 +107,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 

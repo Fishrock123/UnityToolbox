@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class AnimationCreator
 	{

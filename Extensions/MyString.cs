@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyString
 	{

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[ExecuteInEditMode]
 	public class UIFollow : MonoBehaviour

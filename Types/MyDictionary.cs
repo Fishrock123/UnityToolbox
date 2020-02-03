@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[Serializable]
 	public class MyDictionary<TKey, TValue> : IDictionary<TKey, TValue>

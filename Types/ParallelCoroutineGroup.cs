@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public struct ParallelCoroutineGroup
 	{

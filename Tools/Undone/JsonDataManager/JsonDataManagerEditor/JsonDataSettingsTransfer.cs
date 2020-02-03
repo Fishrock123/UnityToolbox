@@ -5,7 +5,7 @@
 //using UnityEditor.Build;
 //using UnityEditor;
 //
-//namespace MyBox.Internal
+//namespace UnityToolbox.Internal
 //{
 //#pragma warning disable 618
 //	public class JsonDataSettingsTransfer : IPostprocessBuild

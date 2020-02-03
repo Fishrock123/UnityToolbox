@@ -12,7 +12,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Put this attribute on a public (or SerializeField) enum in a
@@ -26,7 +26,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	/// <summary>
 	/// Draws the custom enum selector popup for enum fields using the

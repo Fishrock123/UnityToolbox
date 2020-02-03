@@ -4,10 +4,10 @@ using System.IO;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[Serializable]
-	public class MyBoxSettings : ScriptableObject
+	public class UnityToolboxSettings : ScriptableObject
 	{
 		[SerializeField] private bool _autoSaveEnabled = true;
 		[SerializeField] private bool _cleanEmptyDirectoriesFeature = true;
@@ -60,7 +60,7 @@ namespace MyBox.Internal
 
 		#region Instance
 
-		private static MyBoxSettings Instance
+		private static UnityToolboxSettings Instance
 		{
 			get
 			{
@@ -71,8 +71,8 @@ namespace MyBox.Internal
 		}
 
 		private static readonly string Directory = "ProjectSettings";
-		private static readonly string Path = Directory + "/MyBoxSettings.asset";
-		private static MyBoxSettings _instance;
+		private static readonly string Path = Directory + "/UnityToolboxSettings.asset";
+		private static UnityToolboxSettings _instance;
 
 		private static void Save()
 		{
@@ -84,11 +84,11 @@ namespace MyBox.Internal
 			}
 			catch (Exception ex)
 			{
-				Debug.LogError("Unable to save MyBoxSettings!\n" + ex);
+				Debug.LogError("Unable to save UnityToolboxSettings!\n" + ex);
 			}
 		}
 
-		private static MyBoxSettings LoadOrCreate()
+		private static UnityToolboxSettings LoadOrCreate()
 		{
 			var settings = !File.Exists(Path) ? CreateNewSettings() : LoadSettings();
 			if (settings == null)
@@ -103,25 +103,25 @@ namespace MyBox.Internal
 		}
 
 
-		private static MyBoxSettings LoadSettings()
+		private static UnityToolboxSettings LoadSettings()
 		{
-			MyBoxSettings settingsInstance;
+			UnityToolboxSettings settingsInstance;
 			try
 			{
-				settingsInstance = (MyBoxSettings) UnityEditorInternal.InternalEditorUtility.LoadSerializedFileAndForget(Path)[0];
+				settingsInstance = (UnityToolboxSettings) UnityEditorInternal.InternalEditorUtility.LoadSerializedFileAndForget(Path)[0];
 			}
 			catch (Exception ex)
 			{
-				Debug.LogError("Unable to read MyBoxSettings, set to defaults" + ex);
+				Debug.LogError("Unable to read UnityToolboxSettings, set to defaults" + ex);
 				settingsInstance = null;
 			}
 
 			return settingsInstance;
 		}
 
-		private static MyBoxSettings CreateNewSettings()
+		private static UnityToolboxSettings CreateNewSettings()
 		{
-			_instance = CreateInstance<MyBoxSettings>();
+			_instance = CreateInstance<UnityToolboxSettings>();
 			Save();
 
 			return _instance;

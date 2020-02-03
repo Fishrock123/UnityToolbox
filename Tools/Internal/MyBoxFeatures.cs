@@ -1,17 +1,17 @@
 #if UNITY_EDITOR
 using UnityEditor;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[InitializeOnLoad]
-	public class MyBoxFeatures
+	public class UnityToolboxFeatures
 	{
-		private const string AutoSaveMenuItemKey = "Tools/MyBox/AutoSave on play";
-		private const string CleanupEmptyDirectoriesMenuItemKey = "Tools/MyBox/Clear empty directories On Save";
-		private const string IPrepareMenuItemKey = "Tools/MyBox/Run Prepare on play";
-		private const string CheckForUpdatesKey = "Tools/MyBox/Check for updates on start";
+		private const string AutoSaveMenuItemKey = "Tools/UnityToolbox/AutoSave on play";
+		private const string CleanupEmptyDirectoriesMenuItemKey = "Tools/UnityToolbox/Clear empty directories On Save";
+		private const string IPrepareMenuItemKey = "Tools/UnityToolbox/Run Prepare on play";
+		private const string CheckForUpdatesKey = "Tools/UnityToolbox/Check for updates on start";
 
-		static MyBoxFeatures()
+		static UnityToolboxFeatures()
 		{
 			AutoSaveIsEnabled = AutoSaveIsEnabled;
 			CleanupEmptyDirectoriesIsEnabled = CleanupEmptyDirectoriesIsEnabled;
@@ -24,11 +24,11 @@ namespace MyBox.Internal
 
 		private static bool AutoSaveIsEnabled
 		{
-			get { return MyBoxSettings.AutoSaveEnabled; }
+			get { return UnityToolboxSettings.AutoSaveEnabled; }
 			set
 			{
 				{
-					MyBoxSettings.AutoSaveEnabled = value;
+					UnityToolboxSettings.AutoSaveEnabled = value;
 					AutoSaveFeature.IsEnabled = value;
 				}
 			}
@@ -54,11 +54,11 @@ namespace MyBox.Internal
 
 		private static bool CleanupEmptyDirectoriesIsEnabled
 		{
-			get { return MyBoxSettings.CleanEmptyDirectoriesFeature; }
+			get { return UnityToolboxSettings.CleanEmptyDirectoriesFeature; }
 			set
 			{
 				{
-					MyBoxSettings.CleanEmptyDirectoriesFeature = value;
+					UnityToolboxSettings.CleanEmptyDirectoriesFeature = value;
 					CleanEmptyDirectoriesFeature.IsEnabled = value;
 				}
 			}
@@ -84,11 +84,11 @@ namespace MyBox.Internal
 
 		private static bool IPrepareIsEnabled
 		{
-			get { return MyBoxSettings.PrepareOnPlaymode; }
+			get { return UnityToolboxSettings.PrepareOnPlaymode; }
 			set
 			{
 				{
-					MyBoxSettings.PrepareOnPlaymode = value;
+					UnityToolboxSettings.PrepareOnPlaymode = value;
 					IPrepareFeature.IsEnabled = value;
 				}
 			}
@@ -114,12 +114,12 @@ namespace MyBox.Internal
 
 		private static bool CheckForUpdatesEnabled
 		{
-			get { return MyBoxSettings.CheckForUpdates; }
+			get { return UnityToolboxSettings.CheckForUpdates; }
 			set
 			{
 				{
-					MyBoxSettings.CheckForUpdates = value;
-					MyBoxUpdateWindow.AutoUpdateCheckIsEnabled = value;
+					UnityToolboxSettings.CheckForUpdates = value;
+					UnityToolboxUpdateWindow.AutoUpdateCheckIsEnabled = value;
 				}
 			}
 		}

@@ -11,11 +11,11 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public static class ToggleLockHotkey
 	{
-		[MenuItem("Tools/MyBox/Toggle Lock &q")]
+		[MenuItem("Tools/UnityToolbox/Toggle Lock &q")]
 		static void ToggleInspectorLock()
 		{
 			Type inspectorWindowType = Assembly.GetAssembly(typeof(Editor)).GetType("UnityEditor.InspectorWindow");

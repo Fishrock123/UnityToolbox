@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Set size of RectTransform by some other RectTransform

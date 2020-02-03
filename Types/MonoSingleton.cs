@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
     public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
     {

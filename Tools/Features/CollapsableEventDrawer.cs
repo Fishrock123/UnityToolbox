@@ -6,7 +6,7 @@
 // ----------------------------------------------------------------------------
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using System.Collections.Generic;
 	using System.Reflection;

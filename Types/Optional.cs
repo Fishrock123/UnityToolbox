@@ -1,9 +1,9 @@
 using System;
-using MyBox.Internal;
+using UnityToolbox.Internal;
 using UnityEngine;
 
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[Serializable]
 	public class OptionalFloat : Optional<float>
@@ -52,7 +52,7 @@ namespace MyBox
 	}
 }
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[Serializable]
 	public class Optional<T> : OptionalParent
@@ -68,7 +68,7 @@ namespace MyBox.Internal
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	

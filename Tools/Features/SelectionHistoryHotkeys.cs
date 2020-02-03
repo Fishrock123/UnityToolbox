@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[InitializeOnLoad]
 	public static class SelectionHistoryHotkeys
@@ -43,8 +43,8 @@ namespace MyBox.Internal
 		}
 
 
-		private const string BackMenuLabel = "Tools/MyBox/Back %#[";
-		private const string ForwardMenuLabel = "Tools/MyBox/Forward %#]";
+		private const string BackMenuLabel = "Tools/UnityToolbox/Back %#[";
+		private const string ForwardMenuLabel = "Tools/UnityToolbox/Forward %#]";
 
 		[MenuItem(BackMenuLabel)]
 		private static void Back()

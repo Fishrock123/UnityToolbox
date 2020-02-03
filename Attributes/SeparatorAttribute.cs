@@ -4,7 +4,7 @@
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class SeparatorAttribute : PropertyAttribute
 	{
@@ -26,7 +26,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(SeparatorAttribute))]
 	public class SeparatorAttributeDrawer : DecoratorDrawer

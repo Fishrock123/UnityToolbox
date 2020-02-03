@@ -10,7 +10,7 @@ using UnityEditor;
 using Object = UnityEngine.Object;
 using System.Linq;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	public static class MyEditor
 	{

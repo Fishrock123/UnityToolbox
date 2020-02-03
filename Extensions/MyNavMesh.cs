@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyNavMesh
 	{

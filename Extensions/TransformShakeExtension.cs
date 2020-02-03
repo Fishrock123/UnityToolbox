@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// StartShake and StopShake for transform. Use for screenshake on camera transform for instance

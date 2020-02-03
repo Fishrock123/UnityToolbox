@@ -4,7 +4,7 @@
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Use to display inspector of property object
@@ -21,7 +21,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(DisplayInspectorAttribute))]
 	public class DisplayInspectorAttributeDrawer : PropertyDrawer

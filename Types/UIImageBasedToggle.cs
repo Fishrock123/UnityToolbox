@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class UIImageBasedToggle : MonoBehaviour
 	{

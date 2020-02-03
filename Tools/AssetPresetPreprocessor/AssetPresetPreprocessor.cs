@@ -1,9 +1,9 @@
 #if UNITY_EDITOR
 using System.Linq;
-using MyBox.EditorTools;
+using UnityToolbox.EditorTools;
 using UnityEditor;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class AssetPresetPreprocessor : AssetPostprocessor
 	{

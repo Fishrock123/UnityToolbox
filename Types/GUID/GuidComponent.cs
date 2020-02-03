@@ -7,7 +7,7 @@ using UnityEditor.SceneManagement;
 using UnityEditor.Experimental.SceneManagement;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// This component gives a GameObject a stable, non-replicatable Globally Unique IDentifier.

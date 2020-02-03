@@ -1,8 +1,8 @@
 using System.Collections;
-using MyBox.Internal;
+using UnityToolbox.Internal;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyCoroutines
 	{
@@ -51,7 +51,7 @@ namespace MyBox
 	}
 }
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	internal class CoroutineOwner : MonoBehaviour
 	{

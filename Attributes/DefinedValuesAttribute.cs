@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Create Popup with predefined values for string, int or float property
@@ -22,7 +22,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(DefinedValuesAttribute))]
 	public class DefinedValuesAttributeDrawer : PropertyDrawer

@@ -4,7 +4,7 @@ using System.IO;
 using UnityEditor.Presets;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class AssetsPresetPreprocessBase : ScriptableObject
 	{

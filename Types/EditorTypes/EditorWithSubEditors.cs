@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	// Interesting approach for nested editors from Adventure Game Unity tutorial
 	// www.unity3d.com/ru/learn/tutorials/projects/adventure-game-tutorial/conditions?playlist=44381

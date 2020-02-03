@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyDelayedActions
 	{

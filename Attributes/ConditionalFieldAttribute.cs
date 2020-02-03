@@ -5,7 +5,7 @@ using UnityEngine;
 using System.Collections.ObjectModel;
 using System.Reflection;
 
-namespace MyBox
+namespace UnityToolbox
 {
     /// <summary>
     /// Conditionally Show/Hide field in inspector, based on some other field value 
@@ -30,7 +30,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
     using UnityEditor;
 

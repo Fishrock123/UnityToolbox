@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyColor
 	{

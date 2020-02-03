@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[Serializable]
 	public struct MyCursor
@@ -33,7 +33,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEngine;
 	using UnityEditor;

@@ -1,54 +1,54 @@
 #if UNITY_EDITOR
-using MyBox.EditorTools;
+using UnityToolbox.EditorTools;
 using UnityEngine;
 using System.IO;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
     /// <summary>
     /// SO is needed to determine the path to this script.
-    /// Thereby it's used to get relative path to MyBox
+    /// Thereby it's used to get relative path to UnityToolbox
     /// </summary>
-    public class MyBoxInternalPath : ScriptableObject
+    public class UnityToolboxInternalPath : ScriptableObject
     {
         /// <summary>
-        /// Absolute path to MyBox folder
+        /// Absolute path to UnityToolbox folder
         /// </summary>
-        public static DirectoryInfo MyBoxDirectory
+        public static DirectoryInfo UnityToolboxDirectory
         {
             get
             {
-                if (_directoryChecked) return _myBoxDirectory;
+                if (_directoryChecked) return _UnityToolboxDirectory;
                 
                 var internalPath = MyEditor.GetScriptAssetPath(Instance);
                 var scriptDirectory = new DirectoryInfo(internalPath);
 
-                // Script is in MyBox/Tools/Internal so we need to get dir two steps up in hierarchy
+                // Script is in UnityToolbox/Tools/Internal so we need to get dir two steps up in hierarchy
                 if (scriptDirectory.Parent == null || scriptDirectory.Parent.Parent == null)
                 {
                     _directoryChecked = true;
                     return null;
                 }
 
-                _myBoxDirectory = scriptDirectory.Parent.Parent;
+                _UnityToolboxDirectory = scriptDirectory.Parent.Parent;
                 _directoryChecked = true;
-                return _myBoxDirectory;
+                return _UnityToolboxDirectory;
             }
         }
 
-        private static DirectoryInfo _myBoxDirectory;
+        private static DirectoryInfo _UnityToolboxDirectory;
         private static bool _directoryChecked;
 
-        private static MyBoxInternalPath Instance
+        private static UnityToolboxInternalPath Instance
         {
             get
             {
                 if (_instance != null) return _instance;
-                return _instance = CreateInstance<MyBoxInternalPath>();
+                return _instance = CreateInstance<UnityToolboxInternalPath>();
             }
         }
 
-        private static MyBoxInternalPath _instance;
+        private static UnityToolboxInternalPath _instance;
     }
 }
 #endif

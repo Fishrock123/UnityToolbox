@@ -8,7 +8,7 @@
 
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
     public class FoldoutAttribute : PropertyAttribute
     {
@@ -27,7 +27,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
     using System;
     using System.Collections.Generic;

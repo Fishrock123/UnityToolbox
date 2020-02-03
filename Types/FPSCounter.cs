@@ -1,4 +1,4 @@
-﻿using MyBox;
+﻿using UnityToolbox;
 using UnityEngine;
 
 public class FPSCounter : MonoBehaviour

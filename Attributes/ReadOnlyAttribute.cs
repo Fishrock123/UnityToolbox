@@ -4,7 +4,7 @@
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class ReadOnlyAttribute : PropertyAttribute
 	{
@@ -12,7 +12,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
 	public class ReadOnlyAttributeDrawer : PropertyDrawer

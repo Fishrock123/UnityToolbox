@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[RequireComponent(typeof(PolygonCollider2D))]
 	[RequireComponent(typeof(MeshFilter))]

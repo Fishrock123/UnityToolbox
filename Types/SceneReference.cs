@@ -8,7 +8,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace MyBox
+namespace UnityToolbox
 {
     /// <summary>
     /// Class used to serialize a reference to a scene asset that can be used
@@ -103,7 +103,7 @@ namespace MyBox
 
 #if UNITY_EDITOR
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using System;
 	using UnityEditor;

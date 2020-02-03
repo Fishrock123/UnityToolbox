@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyUI
 	{

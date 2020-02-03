@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	public class ConditionallyColoredGUIBlock : IDisposable
 	{

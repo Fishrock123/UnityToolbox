@@ -1,7 +1,7 @@
 #if UNITY_EDITOR
 using UnityEngine;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	public class MyIconPresets
 	{

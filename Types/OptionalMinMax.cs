@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Type to set Min/Max values but with optional Min and Max
@@ -33,7 +33,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	using UnityEngine;

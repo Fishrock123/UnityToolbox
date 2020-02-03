@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace MyBox
+namespace UnityToolbox
 {
 	#region Default Reordable Types
 
@@ -54,7 +54,7 @@ namespace MyBox
 	}
 }
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[Serializable]
 	public class ReorderableBase
@@ -64,7 +64,7 @@ namespace MyBox.Internal
 
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	using EditorTools;

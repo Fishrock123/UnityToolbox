@@ -7,7 +7,7 @@ using UnityEngine.AI;
 
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class ColliderGizmo : MonoBehaviour
 	{
@@ -411,7 +411,7 @@ namespace MyBox
 
 #if UNITY_EDITOR
 
-	namespace MyBox.Internal
+	namespace UnityToolbox.Internal
 	{
 		[CustomEditor(typeof(ColliderGizmo)), CanEditMultipleObjects]
 		public class ColliderGizmoEditor : Editor

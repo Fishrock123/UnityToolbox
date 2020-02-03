@@ -6,9 +6,9 @@
 
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using MyBox.Internal;
+using UnityToolbox.Internal;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// For passing objects between different scenes in Unity.
@@ -195,7 +195,7 @@ namespace MyBox
 	}
 }
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	internal class SceneBundle
 	{

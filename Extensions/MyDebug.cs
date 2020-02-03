@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyDebug
 	{

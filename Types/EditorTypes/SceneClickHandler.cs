@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEditor;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	/// <summary>
 	/// Handles mouse click on scene objects in edit mode.

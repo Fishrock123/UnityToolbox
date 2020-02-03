@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Text;
 using Debug = UnityEngine.Debug;
 
-namespace MyBox
+namespace UnityToolbox
 {
     public class TimeTest : IDisposable
     {

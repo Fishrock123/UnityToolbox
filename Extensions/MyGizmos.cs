@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyGizmos
 	{

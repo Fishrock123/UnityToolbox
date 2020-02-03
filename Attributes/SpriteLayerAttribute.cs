@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class SpriteLayerAttribute : PropertyAttribute
 	{
@@ -18,7 +18,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(SpriteLayerAttribute))]
 	public class SpriteLayerAttributeDrawer : PropertyDrawer

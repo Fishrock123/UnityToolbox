@@ -1,10 +1,10 @@
 #if UNITY_EDITOR
 using System;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
     [Serializable]
-    public class MyBoxVersion
+    public class UnityToolboxVersion
     {
         public string Major;
         public string Minor;
@@ -13,7 +13,7 @@ namespace MyBox.Internal
         public string AsSting;
 
         /// <param name="version">NUM.NUM.NUM format</param>
-        public MyBoxVersion(string version)
+        public UnityToolboxVersion(string version)
         {
             AsSting = version;
             var v = version.Split('.');
@@ -25,12 +25,12 @@ namespace MyBox.Internal
         /// <summary>
         /// Major & Minor versions match, skip patch releases
         /// </summary>
-        public bool BaseVersionMatch(MyBoxVersion version)
+        public bool BaseVersionMatch(UnityToolboxVersion version)
         {
             return Major == version.Major && Minor == version.Minor;
         }
 
-        public bool VersionsMatch(MyBoxVersion version)
+        public bool VersionsMatch(UnityToolboxVersion version)
         {
             return BaseVersionMatch(version) && Patch == version.Patch;
         }

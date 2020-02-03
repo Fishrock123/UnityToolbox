@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Linq;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyCollections
 	{

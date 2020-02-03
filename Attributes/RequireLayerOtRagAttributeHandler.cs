@@ -1,5 +1,5 @@
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	using UnityEngine;

@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyInput
 	{

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	public class ScrollViewBlock : IDisposable
 	{

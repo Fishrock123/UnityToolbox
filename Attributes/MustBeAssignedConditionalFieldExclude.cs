@@ -5,7 +5,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[InitializeOnLoad]
 	public class MustBeAssignedConditionalFieldExclude

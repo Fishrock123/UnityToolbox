@@ -5,7 +5,7 @@ using System;
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// This call is the type used by any other code to hold a reference to an object by GUID

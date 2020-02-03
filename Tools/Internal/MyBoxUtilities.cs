@@ -7,17 +7,17 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using UnityEditor;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
-    public static class MyBoxUtilities
+    public static class UnityToolboxUtilities
     {
-        private static readonly string ReleasesURL = "https://github.com/Deadcows/MyBox/releases";
-        private static readonly string MyBoxPackageInfoURL = "https://raw.githubusercontent.com/Deadcows/MyBox/master/package.json";
+        private static readonly string ReleasesURL = "https://github.com/Deadcows/UnityToolbox/releases";
+        private static readonly string UnityToolboxPackageInfoURL = "https://raw.githubusercontent.com/Deadcows/UnityToolbox/master/package.json";
 
-        private static readonly string MyBoxPackageTag = "com.mybox";
-        //public static readonly string MyBoxRepoLink = "https://github.com/Deadcows/MyBox.git";
+        private static readonly string UnityToolboxPackageTag = "com.UnityToolbox";
+        //public static readonly string UnityToolboxRepoLink = "https://github.com/Deadcows/UnityToolbox.git";
 
-        public static void OpenMyBoxGitInBrowser()
+        public static void OpenUnityToolboxGitInBrowser()
         {
             Application.OpenURL(ReleasesURL);
         }
@@ -25,37 +25,37 @@ namespace MyBox.Internal
 
         #region Get Current / Latest Versions
 
-        public static async void GetMyBoxLatestVersionAsync(Action<MyBoxVersion> onVersionRetrieved)
+        public static async void GetUnityToolboxLatestVersionAsync(Action<UnityToolboxVersion> onVersionRetrieved)
         {
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    var packageJson = await client.GetStringAsync(MyBoxPackageInfoURL);
+                    var packageJson = await client.GetStringAsync(UnityToolboxPackageInfoURL);
 
                     var versionRaw = RetrievePackageVersionOutOfJson(packageJson);
                     if (versionRaw == null)
                     {
-                        Debug.LogWarning("MyBox was unable to parse package.json :(");
+                        Debug.LogWarning("UnityToolbox was unable to parse package.json :(");
                         return;
                     }
 
-                    var version = new MyBoxVersion(versionRaw);
+                    var version = new UnityToolboxVersion(versionRaw);
                     if (onVersionRetrieved != null) onVersionRetrieved(version);
                 }
             }
             catch (HttpRequestException requestException)
             {
-                Debug.LogWarning("MyBox is unable to check version online :(. Exception is: " + requestException.Message);
+                Debug.LogWarning("UnityToolbox is unable to check version online :(. Exception is: " + requestException.Message);
             }
         }
 
-        public static MyBoxVersion GetMyBoxInstalledVersion()
+        public static UnityToolboxVersion GetUnityToolboxInstalledVersion()
         {
             var packageJsonPath = PackageJsonPath;
             if (packageJsonPath == null)
             {
-                Debug.LogWarning("MyBox is unable to check installed version :(");
+                Debug.LogWarning("UnityToolbox is unable to check installed version :(");
                 return null;
             }
 
@@ -63,11 +63,11 @@ namespace MyBox.Internal
             var versionRaw = RetrievePackageVersionOutOfJson(packageJsonContents);
             if (versionRaw == null)
             {
-                Debug.LogWarning("MyBox was unable to parse package.json :(");
+                Debug.LogWarning("UnityToolbox was unable to parse package.json :(");
                 return null;
             }
 
-            var version = new MyBoxVersion(versionRaw);
+            var version = new UnityToolboxVersion(versionRaw);
             return version;
         }
 
@@ -123,7 +123,7 @@ namespace MyBox.Internal
             }
             catch (Exception ex)
             {
-                Debug.LogWarning("MyBox is unable to rewrite packages.json to update git packages :(. Exception is: " + ex.Message);
+                Debug.LogWarning("UnityToolbox is unable to rewrite packages.json to update git packages :(. Exception is: " + ex.Message);
             }
 
             return true;
@@ -142,12 +142,12 @@ namespace MyBox.Internal
 
                 if (ManifestJsonPath == null)
                 {
-                    Debug.LogWarning("MyBox is unable to find manifest.json file :(");
+                    Debug.LogWarning("UnityToolbox is unable to find manifest.json file :(");
                     return false;
                 }
 
                 var manifest = File.ReadAllLines(ManifestJsonPath);
-                _installedViaUPM = manifest.Any(l => l.Contains(MyBoxPackageTag));
+                _installedViaUPM = manifest.Any(l => l.Contains(UnityToolboxPackageTag));
                 _installedViaUPMChecked = true;
                 return _installedViaUPM;
             }
@@ -167,18 +167,18 @@ namespace MyBox.Internal
             {
                 if (_packageJsonPathChecked) return _packageJsonPath;
 
-                var myBoxDirectory = MyBoxInternalPath.MyBoxDirectory;
-                if (myBoxDirectory == null)
+                var UnityToolboxDirectory = UnityToolboxInternalPath.UnityToolboxDirectory;
+                if (UnityToolboxDirectory == null)
                 {
-                    Debug.LogWarning("MyBox is unable to find the path of the package :(");
+                    Debug.LogWarning("UnityToolbox is unable to find the path of the package :(");
                     _packageJsonPathChecked = true;
                     return null;
                 }
 
-                var packageJson = myBoxDirectory.GetFiles().SingleOrDefault(f => f.Name == "package.json");
+                var packageJson = UnityToolboxDirectory.GetFiles().SingleOrDefault(f => f.Name == "package.json");
                 if (packageJson == null)
                 {
-                    Debug.LogWarning("MyBox is unable to find package.json file :(");
+                    Debug.LogWarning("UnityToolbox is unable to find package.json file :(");
                     _packageJsonPathChecked = true;
                     return null;
                 }

@@ -2,11 +2,11 @@
 //using System.Diagnostics;
 //using System.IO;
 //using System.Linq;
-//using MyBox.EditorTools;
+//using UnityToolbox.EditorTools;
 //using UnityEditor;
 //using UnityEngine;
 //
-//namespace MyBox.Internal
+//namespace UnityToolbox.Internal
 //{
 //	public class MyBundleUtility : EditorWindow
 //	{

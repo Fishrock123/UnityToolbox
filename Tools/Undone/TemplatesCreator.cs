@@ -3,7 +3,7 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public static class TemplatesCreator
 	{

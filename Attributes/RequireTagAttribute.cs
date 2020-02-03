@@ -1,6 +1,6 @@
 using System;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[AttributeUsage(AttributeTargets.Class)]
 	public class RequireTagAttribute : Attribute

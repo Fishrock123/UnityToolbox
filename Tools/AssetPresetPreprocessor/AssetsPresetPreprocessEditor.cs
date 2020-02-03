@@ -1,17 +1,17 @@
 ﻿#if UNITY_EDITOR
 using System.Collections.Generic;
 using System.Linq;
-using MyBox.EditorTools;
+using UnityToolbox.EditorTools;
 using UnityEditor;
 using UnityEditor.Presets;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomEditor(typeof(AssetsPresetPreprocessBase))]
 	public class AssetsPresetPreprocessEditor : Editor
 	{
-		[MenuItem("Tools/MyBox/Postprocess Preset Tool", false, 50)]
+		[MenuItem("Tools/UnityToolbox/Postprocess Preset Tool", false, 50)]
 		private static void SelectBase()
 		{
 			var presetBase = MyScriptableObject.LoadAssetsFromResources<AssetsPresetPreprocessBase>().FirstOrDefault();

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class GLDraw
 	{

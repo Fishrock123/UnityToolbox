@@ -1,6 +1,6 @@
 using System;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[Serializable]
 	public class AssetFolderPath
@@ -10,7 +10,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	using UnityEngine;

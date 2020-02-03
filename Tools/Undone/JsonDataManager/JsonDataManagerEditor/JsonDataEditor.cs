@@ -3,15 +3,15 @@
 //using System.Collections.Generic;
 //using System.IO;
 //using System.Linq;
-//using MyBox.EditorTools;
+//using UnityToolbox.EditorTools;
 //using UnityEditor;
 //using UnityEngine;
 //
-//namespace MyBox.Internal
+//namespace UnityToolbox.Internal
 //{
 //	public class JsonDataEditor : EditorWindow
 //	{
-//		//[MenuItem("Tools/MyBox/Settings Editor", false, 50)]
+//		//[MenuItem("Tools/UnityToolbox/Settings Editor", false, 50)]
 //		private static void Initialize()
 //		{
 //			var window = GetWindow<JsonDataEditor>();

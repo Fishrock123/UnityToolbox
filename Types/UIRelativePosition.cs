@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Pivot and Anchor of Target makes no difference.

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyVectors
 	{

@@ -4,14 +4,14 @@
 using UnityEditor;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class LayerAttribute : PropertyAttribute
 	{
 	}
 }
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(LayerAttribute))]
 	public class LayerAttributeDrawer : PropertyDrawer

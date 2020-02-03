@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Prepare() called on every MonoBehaviour by IPrepareFeature class. If Prepare() returns true, parent scene will be marked dirty 
@@ -12,7 +12,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using System.Collections.Generic;
 	using System.Linq;

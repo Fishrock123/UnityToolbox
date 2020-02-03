@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	// Found Here: 
 	// http://answers.unity3d.com/questions/463207/how-do-you-make-a-custom-handle-respond-to-the-mou.html

@@ -7,7 +7,7 @@ using System.Linq;
 using System.IO;
 
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class CleanEmptyDirectoriesFeature : UnityEditor.AssetModificationProcessor
 	{

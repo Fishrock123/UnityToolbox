@@ -3,7 +3,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class UIImageBasedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
 	{

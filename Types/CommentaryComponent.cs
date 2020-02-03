@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class CommentaryComponent : MonoBehaviour
 	{
@@ -19,7 +19,7 @@ namespace MyBox.Internal
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	using EditorTools;

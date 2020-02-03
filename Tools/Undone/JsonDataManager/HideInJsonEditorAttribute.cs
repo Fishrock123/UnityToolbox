@@ -1,6 +1,6 @@
 ﻿//using System;
 //
-//namespace MyBox.Internal
+//namespace UnityToolbox.Internal
 //{
 //	public class HideInJsonEditorAttribute : Attribute
 //	{

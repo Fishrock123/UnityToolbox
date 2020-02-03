@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[InitializeOnLoad]
 	public class AutoSaveFeature

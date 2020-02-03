@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[AttributeUsage(AttributeTargets.Method)]
 	public class ButtonMethodAttribute : PropertyAttribute
@@ -18,7 +18,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using System.Linq;
 	using System.Collections.Generic;

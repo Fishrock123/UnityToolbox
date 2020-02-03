@@ -6,7 +6,7 @@
 //#endif
 //using UnityEngine;
 //
-//namespace MyBox.Internal
+//namespace UnityToolbox.Internal
 //{
 //	public static class JsonDataManager
 //	{

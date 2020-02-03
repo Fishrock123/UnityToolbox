@@ -3,7 +3,7 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	public static class MyScriptableObject
 	{

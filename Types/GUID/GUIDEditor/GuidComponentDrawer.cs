@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomEditor(typeof(GuidComponent))]
 	public class GuidComponentDrawer : Editor

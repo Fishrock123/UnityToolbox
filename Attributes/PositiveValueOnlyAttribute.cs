@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public class PositiveValueOnlyAttribute : PropertyAttribute
 	{
@@ -14,7 +14,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 

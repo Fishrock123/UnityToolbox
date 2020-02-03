@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 using UnityEditor;
 
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	public class SerializedPropertyViewer : EditorWindow
 	{

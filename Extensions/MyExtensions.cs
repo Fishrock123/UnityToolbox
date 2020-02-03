@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	public static class MyExtensions
 	{

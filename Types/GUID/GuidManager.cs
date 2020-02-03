@@ -2,7 +2,7 @@
 using UnityEngine;
 using System;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Class to handle registering and accessing objects by GUID

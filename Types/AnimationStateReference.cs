@@ -3,12 +3,12 @@ using System.Linq;
 using UnityEngine;
 
 #if UNITY_EDITOR
-using MyBox.EditorTools;
+using UnityToolbox.EditorTools;
 using UnityEditor;
 using UnityEditor.Animations;
 #endif
 
-namespace MyBox
+namespace UnityToolbox
 {
 	[Serializable]
 	public class AnimationStateReference
@@ -40,7 +40,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	[CustomPropertyDrawer(typeof(AnimationStateReference))]
 	public class AnimationStateReferenceDrawer : PropertyDrawer

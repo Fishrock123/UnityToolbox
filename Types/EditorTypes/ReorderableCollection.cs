@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace MyBox.EditorTools
+namespace UnityToolbox.EditorTools
 {
 	public class ReorderableCollection
 	{

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace MyBox
+namespace UnityToolbox
 {
 	/// <summary>
 	/// Automatically assign components from this GO to this Property.
@@ -13,7 +13,7 @@ namespace MyBox
 }
 
 #if UNITY_EDITOR
-namespace MyBox.Internal
+namespace UnityToolbox.Internal
 {
 	using UnityEditor;
 	using EditorTools;

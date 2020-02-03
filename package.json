@@ -1,14 +1,9 @@
 {
-"name": "com.mybox",
+"name": "com.fishrock.unitytoolbox",
 "version": "1.3.0",
-"displayName": "MyBox",
-"description": "MyBox is a set of attributes, tools and extensions for Unity",
+"displayName": "UnityToolbox",
+"description": "UnityToolbox is a set of attributes, tools and extensions for Unity",
 
-"unity": "2018.3",
-"dependencies": {},
-
-"keywords": ["attributes", "extensions", "editor tools"],
-"author": { "name" : "Andrew Rumak",
-   "email" : "andrew@deadcow.ru",
-   "url" : "http://andrew@deadcow.ru/" }
+"unity": "2019.2",
+"dependencies": {}
 }
